@@ -1,3 +1,9 @@
+:root {
+    --jp-primaryColor: rgb(245, 170, 193);
+    --jp-secondaryColor: rgb(168, 99, 120);
+    --formFocusColor: var(--jp-secondaryColor);
+    --formFocusShadowColor: rgba(214, 80, 143, 0.555);
+}
 
  .sticky-nav {
      position: fixed;
@@ -10,7 +16,10 @@
      font-family: 'Roboto', sans-serif;
      }
 
-
+.form-control:focus {
+    border-color: var(--formFocusColor);
+    box-shadow: 0 0 0 .25rem var(--formFocusShadowColor);
+}
 
  .title {
     font-family: 'Aguafina Script', cursive;
